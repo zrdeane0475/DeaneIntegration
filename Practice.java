@@ -41,7 +41,12 @@ public class Practice {
         System.out.println("Too high.");
         System.out.println("Need help? Type: 30 for a hint.");
       }
-
+      if (Integer.valueOf(theirGuess) > 10 && Integer.valueOf(theirGuess) != 30) {
+    	  System.out.println("That number is not between 1-10, please enter a lower number.");
+      }
+      if (Integer.valueOf(theirGuess) < 0) {
+    	  System.out.println("That number is not between 1-10, please enter a higher number.");
+      }
       else {
         System.out.println("Good guess!");
       }
